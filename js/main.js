@@ -31,9 +31,11 @@ $(function () {
     });
   });
 
-  $('.navbar a').on('click', function() {
-    $('.navbar-toggler').click();
-});
+  if($(window).width() < 768) {
+    $('.navbar a').on('click', function() {
+      $('.navbar-toggler').click();
+  });
+  }
 
 });
 
